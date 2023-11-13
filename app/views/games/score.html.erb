@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Score</h1>
+  <div class="letters mb-3">
+    <% @grid.each do |char| %>
+      <div class="letter"><%= char %></div>
+    <% end %>
+  </div>
+  <%= @message %>
+  <%= link_to "Play another time", new_path %>
+</div>

@@ -6,5 +6,9 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
+  get 'new', to: 'games#new', as: :new
+  post 'score', to: 'games#score', as: :score
+
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # root "posts#index"
 end
